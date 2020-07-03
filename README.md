@@ -1,7 +1,11 @@
-# automl-proxy-cors
+# gcloud-proxy-cors
 
-AutoML service on Google Cloud doesn't have CORS headers, so you can't build a frontend app that runs within a browser that can call it's REST API. This repository contains a docker image that runs nginx as a reverse proxy (with SSL support) to automl REST API endpoint and responds CORS headers too as part of preflight check.
+Many (or Most) Google Cloud Services doesn't have the right CORS Headers to be able to work from Browsers. May be for good reason that their Javascript client libraries doesn't work within browsers. This docker image contains necessary nginx configurations to setup reverse proxy over the necessary Google Cloud APIs. 
+
+The following services have been configured
+
+* [Auto ML](https://cloud.google.com/vision/automl/docs/create-datasets) - The actual REST API are documented as part of the How-to Guides.
+* [Cloud Storage](https://cloud.google.com/storage/docs/json_api)
 
 ## License
 Public Domain
-
