@@ -6,6 +6,7 @@ The following services have been configured
 
 * [Auto ML](https://cloud.google.com/vision/automl/docs/create-datasets) - The actual REST API are documented as part of the How-to Guides.
 * [Cloud Storage](https://cloud.google.com/storage/docs/json_api)
+* [Cloud Resource Manager](https://cloud.google.com/resource-manager/reference/rest)
 
 ## License
 Public Domain
